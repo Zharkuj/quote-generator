@@ -1,0 +1,162 @@
+body {
+    height: 100vh;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .75
+}
+
+.holder{
+    background-color: #fff;
+    height: 100%;
+    width: 400px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 30px 50px;
+    
+}
+
+.holder button{
+    width: 100px;
+    height: 37.5px;
+    background: #000;
+    border-radius: 12.5px;
+    transition: 500ms all ease-in-out;
+    color: white;
+    
+}
+
+.holder button:hover{
+    width: 125px;
+    height: 50px;
+    border-radius: 15px;
+    border: #e1e1e1 2.5px solid;
+
+}
+
+.holder h2{
+    font-size: 17.5px;
+    text-transform: uppercase;
+    font-weight: 600px;
+}
+
+
+/* Mobile Devices / */
+@media only screen and (max-width: 767px) {
+    body{
+        background-color: cornflowerblue;
+    }
+    .holder{
+        margin: 0px 25px;
+    }
+}
+/* / Tablets / */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body{
+        background-color: lavender
+    }
+    .holder{
+        width: 75%;
+        height: 100%;
+    }
+
+    button{
+        width: 65% !important;
+        height: 65px !important;
+        transition: 500ms all ease-in-out !important;
+    }
+
+    button:hover{
+        width: 75% !important;
+        height: 75px !important;
+        border-radius: 20px !important;
+        border: #e1e1e1 2.5px solid !important;
+    
+    }
+
+    h2{
+        font-size: 30px !important;
+    }
+    h3{
+        font-size: 35px;
+    }
+
+}
+/* / Small Desktops / */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+
+}
+/* / Medium Desktops / */
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    body{
+        background-color: crimson;
+    }
+    .holder{
+        width: 40%;
+        height: 100%;
+        padding: 50px !important;
+    }
+
+    button{
+        width: 60% !important;
+        height: 60px !important;
+        transition: 500ms all ease-in-out !important;
+    }
+
+    button:hover{
+        width: 65% !important;
+        height: 75px !important;
+        border-radius: 20px !important;
+        border: #e1e1e1 2.5px solid !important;
+    }
+
+    h2{
+        font-size: 20px !important;
+    }
+    h3{
+        font-size: 25px;
+    }
+}
+/* / Large Desktops */
+@media only screen and (min-width: 1600px) {
+    body{
+        background-color: wheat;
+    }
+    .holder{
+        width: 50%;
+        height: 100%;
+        padding: 100px !important;
+    }
+
+    button{
+        width: 60% !important;
+        height: 90px !important;
+        transition: 500ms all ease-in-out !important;
+    }
+
+    button:hover{
+        width: 65% !important;
+        height: 100px !important;
+        border-radius: 20px !important;
+        border: #e1e1e1 2.5px solid !important;
+    
+    }
+
+    h2{
+        font-size: 30px !important;
+    }
+    h3{
+        font-size: 35px;
+    }
+}
